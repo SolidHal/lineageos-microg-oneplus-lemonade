@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	  <project name="SolidHal/android_device_oneplus_lemonade" path="device/samsung/lemonade" remote="github" revision="lineage-18.1" />
+</manifest>
