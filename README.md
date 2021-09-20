@@ -1,13 +1,53 @@
-# OnePlus 9 LineageOS with MicroG, magisk, android auto build and install guide
+# OnePlus 9 LineageOS with MicroG, android auto. Build and install guide
 
 
 
 # Install
 
 
+## get microg setup
+
+- Install the following location/lookup backends from fdroid
+```
+Apple UnifiedNlp Backend - you can use others but this one works reliably
+NominatimNlpBackend
+```
+
+- Open MicroG settings, Self-Check
+
+- Tap "System grants signature spoofing permission" and grant it 
+
+- Tap "Play Store (Phonesky) has correct signature" and grant it (this is FakeStore)
+
+- Go back to MicroG setting, open Location modules
+  Enable Apple WiFi and nominatim
+  *IMPORTANT* you must let them *always* have access to location for things to work reliably
+  on android 11 and newer, this means tapping "Allow in settings" and choosing "Allow all the time"
+  
+## get android auto setup
+
+- Install the latest android auto apk (you can find this online or get it with aurora store)
+- Install google maps in the same way
+- open google maps once, grant it location permissions. Just while in use is fine.
+- android auto *should* just work now
+
+if you get stuck on google maps permission, try pressing cancel instead of settings.
+
+if you are having trouble with first time setup, I found it was helpful to setup the bluetooth connection to the car before plugging in the usb c.
+
+
+## Camera app
+
+GCam is one of the best, if not the best camera app out there. Plus it can take advantage of all 3 of the lenses on the phone, which many camera apps can't do.
+
+You can get a build of GCam here: https://forum.xda-developers.com/t/google-camera-for-the-oneplus-9.4303015/
+
+I suggest the Wichaya build, as the Arnova8G2 build fails to open at all.
+
+To avoid crashing when viewing images, I suggest enabling 3rd party galleries in GCam. To do so, tap the arrow at the top, tap the gear, go to Advanced, and at the bottom enable "Use a third-party gallery"
+
 # Build
 
-TODO: bring in android auto reqs
 device repo: https://github.com/SolidHal/android_device_oneplus_lemonade
 
 ## Prepare the build environment
@@ -28,56 +68,52 @@ cd build
 ```
 
 
-## Setup Magisk
-
-
-
 # Functionality
 
-- audio
-  - speakers
-  - bluetooth
-  - microphone
+- [x] audio
+  - [x] speakers
+  - [x] bluetooth
+  - [x] microphone
   
-- biometrics
-  - fingerprint
+- [x] biometrics
+  - [x] fingerprint
 
-- buttons
-  - lock
-  - volume
-  - silent switch
+- [x] buttons
+  - [x] lock
+  - [x] volume
+  - [x] silent switch
 
-- camera
-  - front
-  - back normal
-  - back telephoto
-  - back macro
+- [x] camera
+  - [x] front
+  - [x] back normal
+  - [x] back telephoto
+  - [x] back monochrome
   
-- cellular
-  - phone service
-  - sms/mms
-  - lte
-  - 5g
+- [x] cellular
+  - [x] phone service
+  - [x] sms/mms
+  - [x] lte
+  - [x] 5g
 
-- display
-  - basic
-  - sleep/wake
-  - dimming
-  - camera cutout
+- [x] display
+  - [x] basic
+  - [x] sleep/wake
+  - [x] dimming
+  - [x] camera cutout
 
-- gps
-  - rough location
-  - precise location
+- [x] gps
+  - [x] rough location
+  - [x] precise location
 
-- nfc
+- [ ] nfc
 
-- power
-  - charging
+- [x] power
+  - [x] charging
   - wireless charging
   
-- wifi
-  - 2.4G
-  - 5G
+- [x] wifi
+  - [x] 2.4G
+  - [x] 5G
 
 # Thanks
 reference repos:
