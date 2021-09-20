@@ -4,6 +4,12 @@
 
 # Install
 
+## Install the recovery and image:
+
+grab the latest images from https://github.com/SolidHal/lineageos-microg-oneplus-lemonade/releases
+
+these instruction are for lemonadep, but work the same. Just replace "lemonadep" with "lemonade"
+https://wiki.lineageos.org/devices/lemonadep/install
 
 ## get microg setup
 
