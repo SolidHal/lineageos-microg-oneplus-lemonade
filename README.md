@@ -111,7 +111,7 @@ cd build
   - [x] rough location
   - [x] precise location
 
-- [ ] nfc
+- [ ] nfc: untested, likely works
 
 - [x] power
   - [x] charging
